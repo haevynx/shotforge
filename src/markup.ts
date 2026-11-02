@@ -9,7 +9,7 @@ export function escapeHtml(s: string): string {
 export function inline(text: string | undefined): string {
   if (!text) return '';
   return escapeHtml(text)
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/\*\*([\s\S]+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([\s\S]+?)\*/g, '<em>$1</em>')
     .replace(/\r?\n/g, '<br>');
 }

@@ -54,6 +54,10 @@ describe('markup', () => {
   it('converts *emphasis*, **bold**, line breaks and escapes HTML', () => {
     expect(inline('a *b* **c**\nd <e>')).toBe('a <em>b</em> <strong>c</strong><br>d &lt;e&gt;');
   });
+  it('keeps emphasis that spans a line break', () => {
+    expect(inline('Track the **sleep\nyou owe** your body')).toBe('Track the <strong>sleep<br>you owe</strong> your body');
+    expect(inline('Your\n*to-do\nlist*')).toBe('Your<br><em>to-do<br>list</em>');
+  });
 });
 
 describe('color', () => {
