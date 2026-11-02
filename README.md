@@ -7,9 +7,8 @@
 
 <p align="center">
   <a href="https://github.com/haevynx/shotforge/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/haevynx/shotforge/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://www.npmjs.com/package/shotforge"><img alt="npm" src="https://img.shields.io/npm/v/shotforge.svg"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-  <img alt="Node >= 20" src="https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg">
+  <img alt="Node 20+" src="https://img.shields.io/badge/node-20%2B-brightgreen.svg">
 </p>
 
 <p align="center"><a href="README.vi.md">Tiếng Việt</a></p>
