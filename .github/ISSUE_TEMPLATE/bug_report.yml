@@ -1,0 +1,38 @@
+name: Bug report
+description: Something renders wrong, crashes or behaves unexpectedly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Please remove API keys and confidential data from anything you paste.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the command you ran and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant shotforge.json
+      render: jsonc
+  - type: textarea
+    id: images
+    attributes:
+      label: Screenshots
+      description: Drag in the rendered image if the problem is visual.
+  - type: input
+    id: version
+    attributes:
+      label: shotforge version
+      placeholder: shotforge --version
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OS and Node version
+      placeholder: macOS 26, Node 22.11
+    validations:
+      required: true
