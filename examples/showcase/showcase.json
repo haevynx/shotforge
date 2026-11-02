@@ -1,0 +1,459 @@
+[
+  {
+    "theme": "bold-gradient",
+    "app": "Habitly",
+    "brand": {
+      "primary": "#6a5cff",
+      "accent": "#ff7aa8"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/focus-violet.jpg",
+        "title": "Win back\n*1h 23m* a day"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/tasks-violet.jpg",
+        "title": "Build habits\n*that stick*"
+      },
+      {
+        "layout": "callouts",
+        "screenshot": "shots/chat-violet-dark.jpg",
+        "title": "An AI coach\n*on your side*",
+        "callouts": [
+          {
+            "title": "3 tasks moved",
+            "icon": "check"
+          },
+          {
+            "title": "Break protected",
+            "icon": "clock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "theme": "brand-classic",
+    "app": "Plan",
+    "brand": {
+      "primary": "#3f7be0"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/tasks-blue.jpg",
+        "title": "**Meet Plan.** The award-winning to-do app that helps you reach your goals."
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/chat-blue.jpg",
+        "title": "**Plan ahead.** Ask the assistant to move things around in seconds."
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/lock-river.jpg",
+        "title": "**Stay on track.** Gentle reminders right on your lock screen."
+      }
+    ]
+  },
+  {
+    "theme": "apple-minimal",
+    "app": "Ledger",
+    "brand": {
+      "primary": "#3a6bff"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/money-indigo.jpg",
+        "title": "Money, *simply*\nunderstood."
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Money bag",
+        "title": "Save without\n*thinking about it*",
+        "subtitle": "Turn on round-ups"
+      },
+      {
+        "layout": "callouts",
+        "screenshot": "shots/chat-blue.jpg",
+        "title": "Ask anything\nabout *your spending*",
+        "callouts": [
+          {
+            "title": "Groceries down 18%",
+            "icon": "chart"
+          },
+          {
+            "title": "Rent paid",
+            "icon": "home"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "theme": "dark-premium",
+    "app": "Vault",
+    "brand": {
+      "primary": "#3ecf8e"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/money-dark.jpg",
+        "title": "Banking,\n*beautifully done*",
+        "footnote": "Vault is a financial technology company, not a bank. Banking services provided by partner banks."
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Locked",
+        "title": "Your money's\n*safe space*",
+        "subtitle": "Face ID on every payment"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/lock-city.jpg",
+        "title": "Instant alerts,\n*every time*"
+      }
+    ]
+  },
+  {
+    "theme": "frosted",
+    "app": "Focusly",
+    "brand": {
+      "primary": "#1f5eff",
+      "accent": "#ff8a3d"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/focus-dark.jpg",
+        "title": "Get back\n*1h 23m* every day."
+      },
+      {
+        "layout": "span",
+        "screenshot": "shots/lock-blue.jpg",
+        "title": "Block the apps\nyou open\n*on autopilot*"
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Hourglass done",
+        "title": "One tap.\n*Total* focus.",
+        "subtitle": "Start a session"
+      }
+    ]
+  },
+  {
+    "theme": "night-sky",
+    "app": "Wayfare",
+    "brand": {
+      "primary": "#8a7cff"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/travel-dark.jpg",
+        "title": "First-class\ntrip planning",
+        "subtitle": "Travel smarter."
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Airplane",
+        "title": "Know about delays\n*before the airline*"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/lock-snow.jpg",
+        "title": "Live updates\n*on your lock screen*"
+      }
+    ]
+  },
+  {
+    "theme": "caption-blocks",
+    "app": "Lingo",
+    "brand": {
+      "primary": "#58cc02",
+      "accent": "#ce82ff"
+    },
+    "slides": [
+      {
+        "screenshot": "shots/learn-green.jpg",
+        "title": "learn 40+ languages\nfor free"
+      },
+      {
+        "screenshot": "shots/learn-purple.jpg",
+        "title": "fun, bite-sized\nlessons"
+      },
+      {
+        "screenshot": "shots/learn-blue.jpg",
+        "title": "practice real\nconversations",
+        "background": "#1cb0f6"
+      }
+    ]
+  },
+  {
+    "theme": "warm-cream",
+    "app": "Staylo",
+    "brand": {
+      "primary": "#e0004d"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "icon": "pin",
+        "screenshot": "shots/travel-rose.jpg",
+        "title": "Find unforgettable\nplaces to stay"
+      },
+      {
+        "layout": "hero",
+        "icon": "calendar",
+        "screenshot": "shots/tasks-coral.jpg",
+        "title": "Plan every day\nof your trip"
+      },
+      {
+        "layout": "hero",
+        "icon": "mail",
+        "screenshot": "shots/chat-blue.jpg",
+        "title": "Message your host\nanytime"
+      }
+    ]
+  },
+  {
+    "theme": "soft-mesh",
+    "app": "Spendwise",
+    "brand": {
+      "primary": "#00a86b",
+      "accent": "#7c5cff"
+    },
+    "slides": [
+      {
+        "layout": "callouts",
+        "screenshot": "shots/money-green.jpg",
+        "label": "Smart categories",
+        "title": "Your money finally\nhas *a copilot*",
+        "callouts": [
+          {
+            "title": "24 transactions sorted",
+            "icon": "check"
+          },
+          {
+            "title": "2 refunds found",
+            "icon": "bolt"
+          },
+          {
+            "title": "Budget updated",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/chat-blue.jpg",
+        "label": "Assistant",
+        "title": "Insights before\n*you even ask*"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/money-indigo.jpg",
+        "label": "Cash flow",
+        "title": "Spot trends\n*early*"
+      }
+    ]
+  },
+  {
+    "theme": "editorial-serif",
+    "app": "Mathly",
+    "brand": {
+      "primary": "#2ba86a"
+    },
+    "slides": [
+      {
+        "screenshot": "shots/learn-teal.jpg",
+        "title": "Your personal tutor\nfor *math* and *code*"
+      },
+      {
+        "screenshot": "shots/chat-blue.jpg",
+        "title": "Like an expert\n*sitting next to you*"
+      },
+      {
+        "screenshot": "shots/tasks-violet.jpg",
+        "title": "Lessons that fit\n*your day*"
+      }
+    ]
+  },
+  {
+    "theme": "neon-sport",
+    "app": "Ladderfit",
+    "brand": {
+      "primary": "#111111",
+      "accent": "#e4ff3a"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/workout-lime.jpg",
+        "title": "Get stronger\nwith a *plan*"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/chat-lime.jpg",
+        "title": "A coach\nin your pocket"
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Trophy",
+        "title": "Beat your\n*personal best*"
+      }
+    ]
+  },
+  {
+    "theme": "framed-pop",
+    "app": "Tune",
+    "brand": {
+      "primary": "#1db588",
+      "accent": "#ff6fc1"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/music-1.jpg",
+        "title": "Music, podcasts and\n**audiobooks** in one place"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/music-2.jpg",
+        "title": "**Playlists** made\njust for you"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/music-3.jpg",
+        "title": "**Share** with\nyour friends"
+      }
+    ]
+  },
+  {
+    "theme": "dusk",
+    "app": "Restful",
+    "brand": {
+      "primary": "#7a5cff",
+      "accent": "#ff8a3d"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/sleep-purple.jpg",
+        "title": "Track the **sleep\nyou owe** your body"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/lock-lake.jpg",
+        "title": "Wind down\n**on time**"
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Crescent moon",
+        "title": "Wake up\n**full of energy**"
+      }
+    ]
+  },
+  {
+    "theme": "mono-pro",
+    "app": "Halo Cam",
+    "brand": {
+      "primary": "#ffd400",
+      "accent": "#ffd400"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/camera-1.jpg",
+        "title": "The most powerful\ncamera for *iPhone*"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/camera-2.jpg",
+        "title": "Portrait mode\nfor *pets* too"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/camera-3.jpg",
+        "title": "Pro tools,\n*instant RAW*"
+      }
+    ]
+  },
+  {
+    "theme": "lavender-serif",
+    "app": "Tidy",
+    "brand": {
+      "primary": "#8a6cf0"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/tasks-violet.jpg",
+        "title": "Your\n*to-do list*\nplanner"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/chat-violet-dark.jpg",
+        "title": "Brain-dump\n*to your AI*"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/focus-violet.jpg",
+        "title": "Focus\n*one thing at a time*"
+      }
+    ]
+  },
+  {
+    "theme": "glow-dark",
+    "app": "Pulse Run",
+    "brand": {
+      "primary": "#ff5a1f"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/workout-orange.jpg",
+        "title": "Train with\n*your crew*"
+      },
+      {
+        "layout": "tilted",
+        "screenshot": "shots/sleep-orange.jpg",
+        "title": "Recover\n*smarter*"
+      },
+      {
+        "layout": "object",
+        "asset": "fluent:Fire",
+        "title": "Keep your\n*streak alive*"
+      }
+    ]
+  },
+  {
+    "theme": "quiet-luxury",
+    "app": "Aura",
+    "brand": {
+      "primary": "#c8b38a",
+      "accent": "#c8b38a"
+    },
+    "slides": [
+      {
+        "layout": "hero",
+        "screenshot": "shots/sleep-gold.jpg",
+        "title": "Your personal\nhealth companion"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/focus-gold.jpg",
+        "title": "Get in tune\nwith your body"
+      },
+      {
+        "layout": "hero",
+        "screenshot": "shots/chat-gold.jpg",
+        "title": "Guidance,\n*when you need it*"
+      }
+    ]
+  }
+]

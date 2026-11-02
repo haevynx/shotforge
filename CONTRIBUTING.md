@@ -22,6 +22,7 @@ Useful scripts:
 | `npm run typecheck`        | Type-check without emitting                                                            |
 | `npm run format`           | Format with Prettier                                                                   |
 | `npm run build`            | Compile to `dist/` and regenerate `schema.json`                                        |
+| `npm run showcase`         | Render every theme with its sample app into `docs/images/themes.jpg`                   |
 
 ## Project layout
 
@@ -42,7 +43,7 @@ examples/lumen/     a complete example project
 ## Adding a theme
 
 1. Add an entry to `THEMES` in `src/themes/index.ts`. Derive colors from `c.brand.primary` and `c.brand.accent` rather than hard-coding them, so the theme works for every brand.
-2. Render the example with it: `npm run dev -- gallery -c examples/lumen/shotforge.json`.
+2. Add a sample app for it to `examples/showcase/showcase.json` and run `npm run showcase` to regenerate the README grid.
 3. Check both an iOS and an Android target, and a light and a dark screenshot.
 4. Add it to the theme table in `README.md`.
 

@@ -46,7 +46,7 @@ No AI key? Write the headlines yourself in `shotforge.json`. Everything else wor
 
 ## Themes
 
-![The first three slides of the example app in every theme](https://raw.githubusercontent.com/haevynx/shotforge/main/docs/images/themes.png)
+![Every theme, each shown with its own sample app](https://raw.githubusercontent.com/haevynx/shotforge/main/docs/images/themes.jpg)
 
 | Theme             | Feels like                                            | Fits                               |
 | ----------------- | ----------------------------------------------------- | ---------------------------------- |
