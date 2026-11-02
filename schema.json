@@ -1,0 +1,468 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "app": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "theme": {
+      "default": "bold-gradient",
+      "type": "string"
+    },
+    "brand": {
+      "default": {
+        "primary": "#3a6bff"
+      },
+      "type": "object",
+      "properties": {
+        "primary": {
+          "default": "#3a6bff",
+          "type": "string"
+        },
+        "accent": {
+          "type": "string"
+        },
+        "font": {
+          "description": "Google Fonts family used for headlines",
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      }
+    },
+    "locales": {
+      "default": [
+        "en"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "targets": {
+      "default": [
+        "ios-6.9"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "default": "out",
+      "type": "string"
+    },
+    "ai": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "provider"
+          ]
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "provider"
+          ]
+        }
+      }
+    },
+    "slides": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "layout": {
+            "type": "string",
+            "enum": [
+              "hero",
+              "tilted",
+              "callouts",
+              "caption",
+              "awards",
+              "quote",
+              "object",
+              "stat",
+              "duo",
+              "span"
+            ]
+          },
+          "screenshot": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ],
+            "description": "Image path relative to the config file, or a per-locale map of paths"
+          },
+          "screenshot2": {
+            "description": "Second screenshot for the duo layout",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "label": {
+            "description": "Small uppercase kicker above the title",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "title": {
+            "description": "Headline. Supports *emphasis*, **bold** and \\n line breaks",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "subtitle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ],
+            "description": "A string, or a map of locale code to string"
+          },
+          "footnote": {
+            "description": "Small print at the bottom, e.g. legal disclaimers",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "icon": {
+            "type": "string"
+          },
+          "asset": {
+            "description": "Hero object for the object layout: file path, fluent:<Name> or peep:<seed>",
+            "type": "string"
+          },
+          "assets": {
+            "description": "Extra decorative assets, positioned on the 320-unit wide design canvas",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                },
+                "size": {
+                  "default": 100,
+                  "type": "number"
+                },
+                "rotate": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "required": [
+                "src",
+                "x",
+                "y"
+              ]
+            }
+          },
+          "callouts": {
+            "maxItems": 4,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string"
+                      },
+                      "additionalProperties": {
+                        "type": "string"
+                      }
+                    }
+                  ],
+                  "description": "A string, or a map of locale code to string"
+                },
+                "sub": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string"
+                      },
+                      "additionalProperties": {
+                        "type": "string"
+                      }
+                    }
+                  ],
+                  "description": "A string, or a map of locale code to string"
+                },
+                "icon": {
+                  "description": "Icon name, see `shotforge layouts`",
+                  "type": "string"
+                },
+                "color": {
+                  "description": "Chip color, defaults to the brand palette",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title"
+              ]
+            }
+          },
+          "awards": {
+            "maxItems": 4,
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "propertyNames": {
+                    "type": "string"
+                  },
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "description": "A string, or a map of locale code to string"
+            }
+          },
+          "rating": {
+            "type": "object",
+            "properties": {
+              "score": {
+                "type": "string"
+              },
+              "count": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                ],
+                "description": "A string, or a map of locale code to string"
+              }
+            },
+            "required": [
+              "score"
+            ]
+          },
+          "press": {
+            "type": "object",
+            "properties": {
+              "quote": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                ],
+                "description": "A string, or a map of locale code to string"
+              },
+              "source": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "quote",
+              "source"
+            ]
+          },
+          "quote": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                ],
+                "description": "A string, or a map of locale code to string"
+              },
+              "author": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          },
+          "stat": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "label": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                ],
+                "description": "A string, or a map of locale code to string"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "background": {
+            "description": "CSS background that overrides the theme for this slide",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "app",
+    "slides"
+  ],
+  "$id": "https://unpkg.com/shotforge/schema.json",
+  "title": "shotforge config"
+}
