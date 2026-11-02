@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema.json",
+  "app": {
+    "name": "Lumen",
+    "description": "Day planner with a focus timer and an AI assistant that rearranges your schedule."
+  },
+  "theme": "frosted",
+  "brand": {
+    "primary": "#3a6bff",
+    "accent": "#ff8a3d"
+  },
+  "locales": ["en", "vi"],
+  "targets": ["ios-6.9", "android-phone"],
+  "output": "out",
+  "slides": [
+    {
+      "layout": "hero",
+      "screenshot": "shots/01-tasks.png",
+      "title": {
+        "vi": "Cả ngày của bạn\n*gọn trong một chạm*",
+        "en": "Your whole day,\n*one tap away*"
+      },
+      "assets": [
+        {
+          "src": "fluent:Sparkles",
+          "x": 236,
+          "y": 150,
+          "size": 60,
+          "rotate": 0
+        }
+      ]
+    },
+    {
+      "layout": "span",
+      "screenshot": "shots/02-focus.png",
+      "title": {
+        "vi": "Lấy lại\n*1h 23m*\nmỗi ngày",
+        "en": "Win back\n*1h 23m*\nevery day"
+      }
+    },
+    {
+      "layout": "object",
+      "title": {
+        "vi": "Một chạm.\nTập trung *tuyệt đối*.",
+        "en": "One tap.\n*Total* focus."
+      },
+      "subtitle": {
+        "vi": "Bắt đầu 25 phút",
+        "en": "Start 25 minutes"
+      },
+      "asset": "fluent:Hourglass done"
+    },
+    {
+      "layout": "callouts",
+      "screenshot": "shots/03-chat.png",
+      "label": {
+        "vi": "Trợ lý AI",
+        "en": "AI assistant"
+      },
+      "title": {
+        "vi": "Nói một câu,\n*lịch tự sắp xếp*",
+        "en": "Say it once,\n*your plan rearranges*"
+      },
+      "callouts": [
+        {
+          "title": {
+            "vi": "Đã dời 3 việc",
+            "en": "3 tasks moved"
+          },
+          "icon": "check"
+        },
+        {
+          "title": {
+            "vi": "Chừa giờ nghỉ trưa",
+            "en": "Lunch break kept"
+          },
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "layout": "tilted",
+      "screenshot": "shots/04-money.png",
+      "title": {
+        "vi": "Chi tiêu\n*rõ từng đồng*",
+        "en": "Spending,\n*crystal clear*"
+      }
+    },
+    {
+      "layout": "hero",
+      "screenshot": "shots/05-sleep.png",
+      "title": {
+        "vi": "Ngủ đủ giấc,\n*dậy đầy năng lượng*",
+        "en": "Sleep well,\n*wake up energized*"
+      },
+      "assets": [
+        {
+          "src": "fluent:Crescent moon",
+          "x": -6,
+          "y": 560,
+          "size": 110,
+          "rotate": -10
+        }
+      ]
+    }
+  ]
+}
